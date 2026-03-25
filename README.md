@@ -1,4 +1,4 @@
-# ** American Cereals: A Data-Driven Scoring Model**
+# **American Cereals: A Data-Driven Scoring Model**
 
 ## Table of Contents
 * [Background & Business Goal](#background--business-goal)
