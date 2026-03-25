@@ -1,4 +1,4 @@
-# **The Nutritional Landscape of Cereals: A Data-Driven Scoring Model**
+# ** American Cereals: A Data-Driven Scoring Model**
 
 ## Table of Contents
 * [Background & Business Goal](#background--business-goal)
@@ -72,6 +72,7 @@ plt.show()
 <p align="center">
   <img src="Charts/Health Score vs Consumer Ratings.png" width="500" alt="Market Gap Analysis: Health Score vs. Consumer Rating"/>
 </p>
+
 ## **Key Insights & Market Gap Analysis**
 
 While there is a positive correlation between health and consumer rating, the outliers reveal massive market gaps. By defining "High" and "Low" based on the medians, we can segment the market into behavioral quadrants.
@@ -126,7 +127,7 @@ plt.show()
     <strong>Retail Repositioning for "Hidden Gems":</strong> Supermarkets should identify the "Hidden Gems" (cereals with high health scores but low consumer ratings) and move them to eye-level shelving or include them in "Healthy Start" promotional displays to boost awareness of genuinely nutritious products.
   </li>
   <li>
-    <strong>Consumer Awareness Campaigns:</strong> Health and wellness apps or consumer advocacy groups can use this scoring model to expose "The Posers"—cereals that enjoy high popularity and "health halo" marketing but objectively fail the nutritional test. 
+    <strong>Consumer Awareness Campaigns:</strong> Health and wellness apps or consumer advocacy groups can use this scoring model to expose "The Posers" cereals that enjoy high popularity and "health halo" marketing but objectively fail the nutritional test. 
   </li>
   <li>
     <strong>Product Reformulation:</strong> Manufacturers whose flagship products fall into "The Posers" or "The Losers" quadrants have a clear data-backed mandate to reformulate. Gradually reducing sugar and sodium while fortifying with fiber and vitamins can shift their products into the "Winners" quadrant without sacrificing their established consumer base.
