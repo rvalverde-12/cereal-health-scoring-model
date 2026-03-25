@@ -75,6 +75,17 @@ plt.show()
 
 ## **Key Insights & Market Gap Analysis**
 
+### Driver Analysis: What Makes a Top-Rated Cereal?
+To understand how the official Consumer Reports ratings are calculated, I reverse-engineered the metric using a Pearson correlation analysis across all nutritional features. 
+
+* **The Heavy Penalties:** `Sugars` (-0.76) and `Calories` (-0.69) are the strongest negative drivers. Any cereal with high sugar is aggressively penalized in the final rating.
+* **The Strongest Rewards:** `Fiber` (0.58) and `Protein` (0.47) are the primary drivers of a high score. 
+* **The "Health Halo" Trap:** Interestingly, `Vitamins` showed a negative correlation (-0.24). This suggests that heavily fortified cereals in this dataset are likely compensating for high sugar or low fiber, proving that artificial fortification does not save a poor underlying nutritional profile.
+
+<p align="center">
+  <img src="Charts/Feature_Correlation.png" width="700" alt="Correlation of Nutrients vs. Consumer Reports Rating"/>
+</p>
+
 While there is a positive correlation between health and consumer rating, the outliers reveal massive market gaps. By defining "High" and "Low" based on the medians, we can segment the market into behavioral quadrants.
 
 ```python
