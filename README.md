@@ -69,6 +69,9 @@ plt.title('Validation: Does our Health Score match Consumer Ratings?')
 plt.show()
 ```
 
+<p align="center">
+  <img src="Charts/Health Score vs Consumer Ratings.png" width="500" alt="Market Gap Analysis: Health Score vs. Consumer Rating"/>
+</p>
 ## **Key Insights & Market Gap Analysis**
 
 While there is a positive correlation between health and consumer rating, the outliers reveal massive market gaps. By defining "High" and "Low" based on the medians, we can segment the market into behavioral quadrants.
@@ -93,22 +96,18 @@ By mapping Health Score against Consumer Ratings and using the medians as crossh
 * **The Losers:** Unhealthy & Disliked (Low Score, Low Rating)
 
 ```python
-# 3. Create the Scatter Plot
 plt.figure(figsize=(12, 8))
 sns.set_theme(style="white")
 sns.scatterplot(data=cereals, x='Health_Score', y='rating', s=100, alpha=0.7, color='teal', edgecolor='w')
 
-# 4. Add the Median Lines (The "Crosshair")
 plt.axvline(med_health, color='red', linestyle='--', alpha=0.5, label='Median Health')
 plt.axhline(med_rating, color='blue', linestyle='--', alpha=0.5, label='Median Rating')
 
-# 5. Label the Quadrants (The "Story")
 plt.text(med_health + 0.1, 80, "THE WINNERS\n(Healthy & Popular)", color='green', fontweight='bold', ha='left', va='center')
 plt.text(0.1, 80, "THE POSERS\n(Tasty but Junk)", color='orange', fontweight='bold', ha='right', va='center')
 plt.text(0.1, 20, "THE LOSERS\n(Unhealthy & Disliked)", color='red', fontweight='bold', ha='right', va='center')
 plt.text(med_health + 0.1, 20, "HIDDEN GEMS\n(Healthy but Underrated)", color='blue', fontweight='bold', ha='left', va='center')
 
-# 6. Final Polish
 plt.title('Market Gap Analysis: Health Score vs. Consumer Rating', fontsize=16, pad=20)
 plt.xlabel('Custom Health Score (Engineered Metric)', fontsize=12)
 plt.ylabel('Consumer Reports Rating', fontsize=12)
@@ -117,7 +116,7 @@ plt.show()
 ```
 
 <p align="center">
-  <img src="charts/Market_Gap_Quadrant.png" width="700" alt="Market Gap Analysis: Health Score vs. Consumer Rating"/>
+  <img src="Charts/Market Gap Analysis.png" width="700" alt="Market Gap Analysis: Health Score vs. Consumer Rating"/>
 </p>
 
 ## **Strategic Recommendations**
